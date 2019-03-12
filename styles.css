@@ -1,0 +1,569 @@
+@charset "utf-8";
+
+/*
+    CS155 - Project Version 3 - Mars/Technology Fansite
+	Author:  Alexander Neyman
+	Date:    19FEB2019
+    
+	File: styles.css
+*/
+
+/*Reset Styles*/
+
+article, aside, footer, header, nav, section,
+div, main, a, img {
+	display: block;
+}
+
+article, aside, body, div, footer,
+h1, h2, h3, header, html, img, a, main,
+ul, ol, li, nav, p, section {
+	background: transparent;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	list-style-image: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+body {
+	line-height: 1;
+}
+
+/*General Styles*/
+
+html {
+	background: black url(SeagullNebulaLrg.jpg) center / cover fixed border-box;
+	font-family: Arial, Tahoma;
+	color: rgb(240, 20, 20);
+}
+
+body {
+	background-color: rgb(28, 3, 3);
+	background-color: hsl(0, 80%, 6%);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: white 10px 0 15px,
+                white -10px 0 15px;
+}
+
+/*Specific Styles*/
+
+#Main_Banner {
+	width: 100%;
+	height: auto;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+.Title_At_Top {
+	color: rgb(255, 0, 0);
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 0;
+	font-family: Fantasy, 'Trebuchet MS';
+	font-size: 50px;
+	background: linear-gradient(rgb(120, 40, 40) 10%, black 60%, rgb(120, 40, 40));
+}
+
+a.navicon {
+	display: none;
+}
+
+nav > ul > li {
+	width: 16.66%;
+	float: left;
+	text-align: center;
+	background: linear-gradient(to right, rgb(120, 40, 40) 10%, black 70%, rgb(120, 40, 40) 100%);
+	border-radius: 45%/45%;
+	border: inset red;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-family: 'Trebuchet MS', Arial;
+}
+
+nav > ul > li > a:visited, nav > ul > li > a:link {
+	color: rgb(230, 230, 230);
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: rgb(230, 230, 230);
+	background: linear-gradient(to right, rgb(17, 255, 0) 10%, black 70%, rgb(17, 255, 0) 100%);
+	border-radius: 45%/45%;
+}
+
+nav > ul {
+	list-style-type: none;
+	line-height: 2em;
+}
+
+nav::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+section#MainPage {
+	margin-top: 20px;
+	/*  M5LO5 Demonstrate the use of flexboxes on a web
+	    page (CSS document where you use flexboxes; explain
+		their impact on the page's layout; this can be a
+		new page or a redo of an existing page); I am
+		applying the use of the flexbox to the four original
+		main elements I had on the main page; I find that it
+		was way easier to implement than grids and floats. */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	/* M5LO7 Demonstrate use of properties of flexbox containers
+	   (CSS, document what flexbox container properties you use and
+	   their impacts, for one CSS selector using them); used flex-flow
+	   property for the flexbox to ensure it goes across the row and
+	   wraps to the next line when containers become too big. */
+	flex-flow: row wrap;
+}
+
+#Left_Pic {
+	margin-left: 4%;
+	width: 45%;
+	height: 45%;
+	/* M5LO6 Demonstrate use of properties of flexbox items (CSS,
+	   document what flexbox item properties you use and their
+	   impacts, for one CSS selector using them); maintains the
+	   aspect ratio better of the box items as screen size changes. */
+	-webkit-box: 0 1 auto;
+	-moz-box: 0 1 auto;
+	-ms-flexbox: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
+}
+
+#Right_Text {
+	margin-top: 2px;
+	margin-left: 4%;
+	margin-right: 1%;
+	width: 45%;
+	height: 45%;
+	-webkit-box: 0 1 auto;
+	-moz-box: 0 1 auto;
+	-ms-flexbox: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
+	font-size: 0.9em;
+}
+
+#Left_Text {
+	margin-top: 10px;
+	margin-left: 5%;
+	width: 45%;
+	height: 45%;
+	-webkit-box: 0 1 auto;
+	-moz-box: 0 1 auto;
+	-ms-flexbox: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
+	font-size: 0.9em;
+}
+
+#Right_Pic {
+	margin-top: 10px;
+	margin-left: 4%;
+	margin-right: auto;
+	width: 45%;
+	height: 45%;
+	-webkit-box: 0 1 auto;
+	-moz-box: 0 1 auto;
+	-ms-flexbox: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+	font-size: 0.7em;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#LearnV1List, #LearnV2List {
+	overflow: auto;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	border: 1px solid rgb(17, 255, 0);
+}
+
+#LearnV1List li, #LearnV2List li {
+	width: 80%;
+	margin-left: 5%;
+}
+
+#LearnV1List ul li, #LearnV2List ul li {
+	margin-left: 8%;
+}
+
+#AboutMe {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	font-size: 0.9em;
+}
+
+#AboutMe p {
+	width: 99%;
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#LearnV3List {
+	list-style-type: disc;
+	margin-left: 5%;
+}
+
+#MLART1 {
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.9em;
+	width: 90%;
+}
+
+#Viking1, #Viking2 {
+	margin-top: 20px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	border: 1px inset black;
+}
+
+#Viking1 h3, #Viking2 h3 {
+	color: rgb(17, 255, 0);
+	width: 100%;
+	font-size: 1.3em;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+#Viking1 img, #Viking2 img {
+	width: 45%;
+	height: 45%;
+	margin-left: 2%;
+	margin-right: 3%;	
+}
+
+#Viking1 section, #Viking2 section {
+	width: 45%;
+	height: auto;
+	margin-left: 3%;
+	margin-right: 2%;	
+}
+
+#Viking1 a, #Viking2 a {
+	margin-top: 3%;
+	text-align: center;
+}
+
+#Viking1 a:visited, #Viking1 a:link, #Viking2 a:visited, #Viking2 a:link {
+	color: rgb(17, 255, 0);
+}
+
+#VikingArticle {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#VikingArticle h2 {
+	width: 100%;
+	font-size: 1.3em;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+#VikingArticle img {
+	width: 45%;
+	height: 45%;
+	margin-left: 2%;
+	margin-right: 3%;
+}
+
+#VikingArticle div {
+	width: 45%;
+	height: auto;
+	margin-left: 3%;
+	margin-right: 2%;
+}
+
+#VikingArticle div p {
+	margin: 2% auto 2% auto; 
+}
+
+#MarsLinks {
+	width: 80%;
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.9em;
+}
+
+#MarsLinks ol {
+	margin-left: 2%;
+}
+
+#MarsLinks ol li a {
+	width: 20%;
+}
+
+#MarsLinks a:hover, #MarsLinks a:link {
+	color: rgb(17, 255, 0);
+}
+
+/*Table Styles*/
+
+/* M6LO7 Demonstrate how to format a table with CSS (CSS, group your
+   table styles together and note the overall impact they have on the
+   HTML); provides formatting for the table on Viking Landers. It spaces
+   the table contents, resizes the table, and provides contrasting colors
+   to accentuate the data and make it easier to read. */
+#VikingTable {
+	margin-top: 2%;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	background: black;
+	border-collapse: collapse;
+	border: 2px solid rgb(69, 69, 255);
+}
+
+#VikingTable thead {
+	color: rgb(17, 255, 0);
+	font-size: 1.1em;
+}
+
+col#Subjects {
+	width: 26%;
+	background: rgba(69, 69, 255, 0.2);
+}
+
+col#DataColumns {
+	width: 32%;
+
+}
+
+#VikingTable td, #VikingTable th {
+	text-align: left;
+	padding-left: 1%;
+	border: 0.4px solid rgb(45, 45, 255);
+	padding-top: 1%;
+	padding-bottom: 1%;
+	
+}
+
+#VikingTable thead th {
+	text-align: center;
+}
+
+#VikingTable tbody td ul {
+	list-style-image: none;
+	padding-left: 3%;
+}
+
+#VikingTable tbody td ul ul {
+	padding-left: 2%;
+}
+
+
+/*Media Screen Styles*/
+
+/* M5LO3 Use media queries to format a page differently for phones vs.
+   PCs. (CSS, note where these are in your CSS and describe the overall
+   impact they have on the site); Provided below, these rules redefine
+   how to layout specific pages to make it friendlier for smaller screen
+   sizes. */
+@media only screen and (max-width: 640px) {
+
+	body {
+		width: 95%;
+		box-shadow: none;
+	}
+	
+	.Title_At_Top {
+		color: rgb(255, 0, 0);
+		text-align: center;
+		margin-bottom: 2%;
+		margin-top: 0;
+		font-family: Fantasy, 'Trebuchet MS';
+		font-size: 0.9em;
+		background: linear-gradient(rgb(120, 40, 40) 10%, black 60%, rgb(120, 40, 40));
+	}
+	
+	/* M5LO4 Use CSS for pull down menus (CSS); created a pulldown menu for
+	   smaller screens where the horizontal menu ceases to hold up. */
+	a.navicon {
+		display: block;
+		padding: 1%;
+		margin-left: 2%;
+		margin-right: 92%;
+		font-size: 0.9em;
+		font-weight: bold;
+		color: rgb(17, 255, 0);
+		border: 0.5px solid rgb(17, 255, 0);
+	}
+	
+	nav.Menu ul {
+		display: none;
+	}
+	
+	a.navicon:hover+ul, nav.Menu ul:hover {
+		display: block;
+	}
+	
+	a.navicon:active+ul, nav.Menu ul:active {
+		display: block;
+	}
+
+	section#MainPage {
+		margin-top: 5px;
+		flex-flow: column nowrap;
+	}
+	
+	#Left_Pic, #Right_Text, #Left_Text, #Right_Pic {
+		margin: 1% auto 1% auto;
+		width: 80%;
+		height: 80%;
+		font-size: 0.6em;
+	}
+	
+	footer {
+		font-size: 0.4em;
+		margin-top: 10px;
+		padding: 5px;
+	}
+	
+	nav ul li {
+		float: none;
+		height: 30px;
+		width: 100px;
+		border-radius: 0;
+		font-size: 0.6em;
+	}
+	
+	nav ul {
+		position: absolute;
+	}
+	
+	#MLART1 {
+		font-size: 0.6em;
+	}
+	
+	#Viking1, #Viking2 {
+		margin-top: 5px;
+		flex-flow: column nowrap;
+	}
+	
+	#Viking1 h3, #Viking2 h3 {
+		font-size: 0.9em;
+	}
+
+	#Viking1 img, #Viking2 img {
+		width: 80%;
+		height: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#Viking1 section, #Viking2 section {
+		width: 80%;
+		height: 80%;
+		font-size: 0.6em;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+
+	#Viking1 a, #Viking2 a {
+		margin-top: 3%;
+		text-align: center;
+	}
+	
+	#VikingArticle {
+		flex-flow: column nowrap;
+	}
+
+	#VikingArticle h2 {
+		width: 100%;
+		font-size: 1.3em;
+		text-align: center;
+		margin-top: 2%;
+		margin-bottom: 1%;
+	}
+
+	#VikingArticle img {
+		width: 80%;
+		height: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#VikingArticle div {
+		width: 90%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#VikingArticle div p {
+		margin: 4% auto 4% auto;
+		font-size: 0.7em;
+	}
+	
+	article.Sorry {
+		font-size: 0.6em;
+	}
+	
+	main#AboutMe {
+		font-size: 0.5em;
+	}
+	
+	#LearnV1List, #LearnV2List {
+		height: 50px;
+	}
+	
+	#MarsLinks {
+		font-size: 0.5em;
+	}
+	
+	#VikingTable {
+		font-size: 0.4em;
+	}
+}

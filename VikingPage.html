@@ -1,0 +1,157 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <!--
+    CS155 - Project Version 3 - Mars/Technology Fansite
+	Author:  Alexander Neyman
+	Date:    19FEB2019
+    
+	File: VikingPage.html
+  -->
+  
+  <title>The Viking Lander</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img id="Main_Banner" src="Viking1MartianDuneField.jpg" alt="Viking 1 Showing Martian Dune Field" />
+    <h1 class="Title_At_Top">The Viking Landers</h1>
+  </header>
+
+  <nav class="Menu">
+    <a class="navicon">≡</a>
+	<ul>
+      <li><a href="index.html">Main Page</a></li>
+      <li><a href="Mars_History.html">Mars History</a></li>
+      <li><a href="Mars_Probes.html">Probes</a></li>
+      <li><a href="Mars_Landers.html">Landers</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="Mars_Links.html">Links</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+  <article id="VikingArticle">
+	<h2>Viking Landers Information</h2>
+	<img src="VikingLanderModel.jpg" alt="Viking Lander Model" />
+	<div>
+	  <p>The primary scientific objectives of the Viking Landers was to study/investigate the
+	     biology of Mars, the chemical composition (organic and inorganic) of the atmosphere
+	     and soils, the meteorology (or weather) for the planet, the seismology of the planet,
+	     magnetic properties of the planet and rocks found, and the appearance and physical properties
+	     of the Martian surface and atmosphere (dust storms, rock colors, ice, etc.).</p>
+	  <p>FUN FACT: In order to perform the biology experiments and determine chemical compositions
+	     on the surface of Mars, not only did the Lander have to be fully sterilized (all Earth origin
+	     bacteria and chemicals removed), but the fuel used to land (Hydrazine) also had to be purified,
+	     to prevent contaminating Mars and the Lander. They even encapsulated the Lander in a "Bioshield"
+	     to prevent any last minute contamination (from Earth) for when it was launched on Earth.</p>
+	</div>
+  </article>
+  <!-- M6LO3 Demonstrate how to create a table (HTML); created a table to showcase data
+	   about the two Viking Landers in the given format. -->
+  <table id="VikingTable">
+	<colgroup>
+	  <col id="Subjects" />
+	  <col id="DataColumns" span="2" />
+	</colgroup>
+	<thead>
+	  <tr>
+	    <th>Stats</th>
+	    <th>Viking 1</th>
+	    <th>Viking 2</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <th>Journey Time Earth-to-Mars Orbit</th>
+	    <td>304 days</td>
+	    <td>333 days</td>
+	  </tr>
+	  <tr>
+	    <th>Journey Time Earth-to-Mars Surface</th>
+	    <td>335 days</td>
+	    <td>360 days</td>
+	  </tr>
+	  <tr>
+	    <th>Lander Weight (w/o Fuel)</th>
+		<!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in
+		     a table (HTML, document where you write HTML that causes a multi-row
+			 or multi-column span; say which one it is as well: row or column, or
+			 both); used where information common to both Landers can be shared
+			 between the two columns. -->
+	    <td colspan="2">576 kg (or 1,270 pounds)</td>
+	  </tr>
+	  <tr>
+	    <th>Lander Dimensions</th>
+	    <td colspan="2">Approximately 3 meters Across & about 2 meters Tall (or 10 feet Across & 7 feet Tall)</td>
+	  </tr>
+	  <tr>
+	    <th>Scientific Instruments</th>
+	    <td colspan="2">
+		  <ul>
+		    <li>Imaging System</li>
+		    <li>Gas Chromatograph Mass Spectrometer</li>
+		    <li>Seismometer</li>
+		    <li>X-ray Fluorescence Spectrometer</li>
+		    <li>Biological Laboratory</li>
+		    <li>Weather Instrument Package</li>
+		    <li>Remote Sampler Arm</li>
+		    <li>Upper Atmosphere Mass Spectrometer (Aeroshell)<li>
+		    <li>Retarding Potential Analyzer (plus pressure and temperature sensors)
+		  </ul>
+		</td>
+	  </tr>
+	  <tr>
+	    <th>Computer System</th>
+	    <td colspan="2">Two General-Purpose Computer Channels w/ Plated-Wire Memories (18,000-word storage each)</td>
+	  </tr>
+	  <tr>
+	    <th>Power Systems</th>
+	    <td colspan="2">
+		  <ul>
+		    <li><a href="https://en.wikipedia.org/wiki/Systems_for_Nuclear_Auxiliary_Power">Two SNAP 19-style, 35-Watt Radioisotope Thermoelectric Generators (RTGs)</a> (Plutonium-236 decays generating heat that is converted to 70 Watts of Electricity, barely what would power a light bulb.)</li>
+		    <li>Four Nickel-Cadmium, Rechargeable Batteries</li>
+		  </ul>
+		</td>
+	  </tr>
+	  <tr>
+	    <th>Miscellaneous Systems and Characteristics</th>
+	    <td colspan="2">
+		  <ul>
+		    <li>Communications System (w/ Viking Orbiter)</li>
+	  	    <li>Redundant Communications System (w/ Earth)</li>
+		    <li>Landing Systems
+		      <ul>
+		        <li>Thrusters (or Engines) for Descent to Mars Surface (for Two Separate Stages during Landing)</li>
+			    <li>An Aeroshell (for Lander Heat Protection)</li>
+			    <li>Two Science Instruments</li>
+			    <li>Radar Altimeters (for determining height above Mars surface)</li>
+			    <li>Parachute</li>
+		     </ul>
+		    </li>
+            <li>Lander Design
+		      <ul>
+			    <li>Mechanical Design (Struts, A-frame Assembly, Honey-combed Aluminum sections)</li>
+			    <li>Painted Light Gray with Rubber-based Silicon (to reflect heat from the sun and protect components from sand abrasion)</li>
+			    <li>Built of Aluminum and Titanium Alloys (Mixture) and Insulated to Prevent Heat Loss to Mars Atmosphere</li>
+		      </ul>
+		    </li>
+		  </ul>
+	    </td>
+	  </tr>
+    </tbody>
+  </table>
+  </main>
+  
+  <footer>
+    <p class="ImageAttributions">Images and Information Courtesy NASA/JPL-Caltech.
+       &nbsp; &nbsp; &nbsp;  Information Courtesy of Wikipedia via Creative Commons.</p> 
+  </footer>
+
+</body>
+
+</html>
