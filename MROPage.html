@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <!--
+    CS155 - Project Version 4 - Mars/Technology Fansite
+	Author:  Alexander Neyman
+	Date:    12MAR2019
+    
+	File: MROPage.html
+  -->
+  
+  <title>Mars Reconnaissance Orbiter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <a href="MRODanielsonCrater.jpg"><img id="Main_Banner_OddSize" src="MRODanielsonCraterSplash.jpg"
+	     alt="Danielson Crater a bluish color" /></a>
+    <h1 class="Title_At_Top">Mars Reconnaissance Orbiter</h1>
+  </header>
+
+  <nav class="Menu">
+    <a class="navicon">≡</a>
+	<ul>
+      <li><a href="index.html">Main Page</a></li>
+      <li><a href="Mars_History.html">Mars History</a></li>
+      <li><a href="Mars_Probes.html">Probes</a></li>
+      <li><a href="Mars_Landers.html">Landers</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="Mars_Links.html">Links</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <article id="MROArticle">
+      <h2>Videos of the Mars Reconnaissance Orbiter</h2>
+	  <p>The following videos depict the abilities of the Mars Reconnaissance Orbiter
+	     as it continues to provide useful pictures and information of Mars since it
+	     arrived in Martian orbit in March of 2006.</p>
+    </article>
+    <div id="MRODiv">
+	  <!-- M8LO8 Demonstrate the use of video in a Web page (HTML); added a video
+	       to accentuate the abilities of the probe/orbiter. -->
+	  <video controls poster="MROOrbiting.jpg">
+	    <source src="McCuistionMovie.mp4" type="video/mp4" />
+		<source src="McCuistionMovie.mov" type="video/mov" />
+		<p><em>To play this video clip, your browser needs to support HTML5.</em></p>
+	  </video>
+	  <!-- M8LO9  Demonstrate the use of the iframe element (HTML); got an embedded
+	       video using iframe. -->	  
+	  <iframe src="https://mars.jpl.nasa.gov/layout/embed/video/?v=63"
+	    width="640" height="370"></iframe>
+    </div>
+  </main>
+  
+  <footer>
+    <p class="ImageAttributions">Images, Videos, and Information Courtesy NASA/JPL-Caltech.
+       &nbsp; &nbsp; &nbsp;  Information Courtesy of Wikipedia via Creative Commons.</p> 
+  </footer>
+
+</body>
+
+</html>
